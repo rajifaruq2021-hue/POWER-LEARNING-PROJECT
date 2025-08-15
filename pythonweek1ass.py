@@ -1,0 +1,51 @@
+# --- Basic Calculator Program ---
+
+# Use a try-except block to handle potential errors if the user enters non-numeric input.
+try:
+    # Ask the user to input the first number.
+    # The float() function is used to convert the user's input string into a floating-point number,
+    # which allows for decimal values.
+    num1 = float(input("Enter the first number: "))
+
+    # Ask the user to input the second number.
+    num2 = float(input("Enter the second number: "))
+
+    # Ask the user for the mathematical operation.
+    operation = input("Enter an operation (+, -, *, /): ")
+
+    # Use if-elif-else statements to check which operation was chosen.
+    if operation == '+':
+        # Perform addition and store the result.
+        result = num1 + num2
+        # Display the result in the specified format.
+        print(f"{num1} + {num2} = {result}")
+
+    elif operation == '-':
+        # Perform subtraction and store the result.
+        result = num1 - num2
+        # Display the result.
+        print(f"{num1} - {num2} = {result}")
+
+    elif operation == '*':
+        # Perform multiplication and store the result.
+        result = num1 * num2
+        # Display the result.
+        print(f"{num1} * {num2} = {result}")
+
+    elif operation == '/':
+        # Before performing division, check if the second number is zero.
+        if num2 == 0:
+            print("Error: Cannot divide by zero.")
+        else:
+            # Perform division and store the result.
+            result = num1 / num2
+            # Display the result.
+            print(f"{num1} / {num2} = {result}")
+
+    else:
+        # If the user enters an invalid operation, print an error message.
+        print("Invalid operation. Please use one of the following: +, -, *, /")
+
+except ValueError:
+    # This message is shown if the user enters a non-numeric value for the numbers.
+    print("Invalid input. Please enter valid numbers.")

@@ -1,16 +1,16 @@
-# --- Basic Calculator Program ---
+# --- This is a Basic Python Calculator Program written to perform arithmetic and string, experimenting with variables and exploring data types---
 
-# Use a try-except block to handle potential errors if the user enters non-numeric input.
+# i am trying to use a try-except block to handle potential errors if I enters non-numeric input.
 try:
-    # Ask the user to input the first number.
-    # The float() function is used to convert the user's input string into a floating-point number,
+    # Initially I ask/prompt the user to input the first number.
+    # We habe to note that the float() function is used to convert the user's input string into a floating-point number,
     # which allows for decimal values.
     num1 = float(input("Enter the first number: "))
 
-    # Ask the user to input the second number.
+    # i then ask/prompt the user to input the second number.
     num2 = float(input("Enter the second number: "))
 
-    # Ask the user for the mathematical operation.
+    # I then proceedingly ask/prompt the user for the mathematical operation.
     operation = input("Enter an operation (+, -, *, /): ")
 
     # Use if-elif-else statements to check which operation was chosen.
